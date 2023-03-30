@@ -1,0 +1,32 @@
+[
+  {
+    "id": "b4cbdc26-0d4e-48dc-ad55-65bcb23671cc",
+    "continent": "Africa",
+    "destination": "Capetown"
+  },
+  {
+    "id": "823e9a44-9e04-4aab-9d35-9e92cd07f7f4",
+    "continent": "Europe",
+    "destination": "Stockholm"
+  },
+  {
+    "id": "c34e4365-62c8-4b2c-8137-ad1b27cb05f4",
+    "continent": "North America",
+    "destination": "Los Angeles"
+  },
+  {
+    "id": "1502acb8-2eca-4025-87f4-9c8a1a3db202",
+    "continent": "South America",
+    "destination": "Santiago"
+  },
+  {
+    "id": "b2210dc7-eb13-4c34-9ea5-fbc94f12be8c",
+    "continent": "Middle East",
+    "destination": "Cairo"
+  },
+  {
+    "id": "12ae632f-c1c4-472d-b7f5-3675362411aa",
+    "continent": "Australia",
+    "destination": "Sydney"
+  }
+]

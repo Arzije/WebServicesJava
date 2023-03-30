@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <title>Travel Destinations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="formContainer">
+
+        <h1>Travel Destinations</h1>
+
+        <h2>Add destination</h2>
+        <form onsubmit="addDestination(event)">
+            <label for="continent">Continent:</label>
+            <input type="text" id="continent" name="continent" required><br>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required><br>
+            <button type="submit">Add destination</button>
+        </form>
+
+
+        <form>
+            <label for="getAllDestinations">Get all destinations:</label>
+            <button id="getAllDestinations">Get all destinations</button>
+            <br>
+            <label for="continent">Select a continent:</label>
+            <select id="continents" name="continent">
+                <option value="">--Select a continent--</option>
+                <option value="Africa">Africa</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Middle East">Middle East</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <button id="getAllContinents">Get destination by continent</button>
+            <br>
+        <!--    <label for="getDestinationById">Get destination by ID:</label>-->
+        <!--    <input type="text" id="destinationId" name="destinationId">-->
+        <!--    <button id="getDestinationById">Get destination</button>-->
+            <label for="destinationId">Select destination ID:</label>
+            <select id="destinationId" name="destinationId">
+                <option value="">--Select ID--</option>
+                <option value="b4cbdc26-0d4e-48dc-ad55-65bcb23671cc">b4cbdc26-0d4e-48dc-ad55-65bcb23671cc</option>
+                <option value="823e9a44-9e04-4aab-9d35-9e92cd07f7f4">823e9a44-9e04-4aab-9d35-9e92cd07f7f4</option>
+                <option value="c34e4365-62c8-4b2c-8137-ad1b27cb05f4">c34e4365-62c8-4b2c-8137-ad1b27cb05f4</option>
+                <option value="1502acb8-2eca-4025-87f4-9c8a1a3db202">1502acb8-2eca-4025-87f4-9c8a1a3db202</option>
+                <option value="b2210dc7-eb13-4c34-9ea5-fbc94f12be8c">b2210dc7-eb13-4c34-9ea5-fbc94f12be8c</option>
+                <option value="12ae632f-c1c4-472d-b7f5-3675362411aa">12ae632f-c1c4-472d-b7f5-3675362411aa</option>
+                <option value="cbb0c0d3-c0bf-4de3-bd86-a9c3c3e5c8ca">cbb0c0d3-c0bf-4de3-bd86-a9c3c3e5c8ca</option>
+                <option value="c136b381-10da-4c23-9c59-1ade82807f42">c136b381-10da-4c23-9c59-1ade82807f42</option>
+            </select>
+            <button id="getDestinationById">Get destination by ID</button>
+        </form>
+
+
+    </div>
+
+    <div id="results">
+        <h2>All Destinations:</h2>
+        <div id="allDestinations"></div>
+        <h2>All Continents:</h2>
+        <div id="allContinents"></div>
+        <h2>Destination by ID:</h2>
+        <div id="destinationById"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
