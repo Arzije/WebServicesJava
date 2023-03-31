@@ -12,17 +12,6 @@ public class TravelDestinationControllerTest {
     @LocalServerPort
     private int port;
 
-//    @Test
-//    public void testGetAllDestinations() {
-//        given()
-//                .port(port)
-//                .when()
-//                .get("/api/allDestinations")
-//                .then()
-//                .statusCode(200)
-//                .body("size()", is(6));
-//    }
-
     @Test
     public void testGetDestinationById() {
         String destinationId = "b4cbdc26-0d4e-48dc-ad55-65bcb23671cc";

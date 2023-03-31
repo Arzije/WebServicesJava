@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <script type="text/javascript" src="js/script.js" defer></script>
     <title>Travel Destinations</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -27,6 +27,8 @@
         <form>
             <label for="getAllDestinations">Get all destinations:</label>
             <button id="getAllDestinations">Get all destinations</button>
+            <button id="getAllDestinationsJsonFormat">Get All Destinations in Json-Format</button>
+
             <br>
             <label for="continent">Select a continent:</label>
             <select id="continents" name="continent">
@@ -38,11 +40,13 @@
                 <option value="Middle East">Middle East</option>
                 <option value="Australia">Australia</option>
             </select>
-            <button id="getAllContinents">Get destination by continent</button>
+            <button id="getDestinationByContinent">Get destination by continent</button>
             <br>
-        <!--    <label for="getDestinationById">Get destination by ID:</label>-->
-        <!--    <input type="text" id="destinationId" name="destinationId">-->
-        <!--    <button id="getDestinationById">Get destination</button>-->
+
+            <select id="continentSelect"></select>
+            <button id="getDestinationByContinentJsonFormat">Get Destinations by Continent in Json-Format</button>
+
+
             <label for="destinationId">Select destination ID:</label>
             <select id="destinationId" name="destinationId">
                 <option value="">--Select ID--</option>
@@ -56,6 +60,14 @@
                 <option value="c136b381-10da-4c23-9c59-1ade82807f42">c136b381-10da-4c23-9c59-1ade82807f42</option>
             </select>
             <button id="getDestinationById">Get destination by ID</button>
+        </form>
+
+        <form>
+            <label for="destinationIdInJsonFormat">Select destination ID:</label>
+            <select id="destinationIdInJsonFormat" name="destinationIdInJsonFormat">
+                <option value="">--Select ID and get in Json-Format--</option>
+            </select>
+            <button id="getDestinationByIdButtonJsonFormat">Get destination by ID in Json-Format</button>
         </form>
 
 
