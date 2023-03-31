@@ -2,6 +2,7 @@ const BASE_URL = 'http://localhost:8080/api/destinations';
 const BASE_URL_GET = 'http://localhost:8080/api';
 const DESTINATION_IDS_URL = 'http://localhost:8080/api/allDestinations';
 
+const addDestinationButton = document.getElementById('addDestinationButton');
 const allDestinations = document.getElementById('allDestinations');
 const allContinents = document.getElementById('allContinents');
 const destinationById = document.getElementById('destinationById');
@@ -14,6 +15,7 @@ const getDestinationByContinentJSONFormatButton = document.getElementById('getDe
 const getDestinationByIdButtonJsonFormat = document.getElementById('getDestinationByIdButtonJsonFormat');
 
 // This function sends an HTTP POST request to the server-side code to add a new travel destination to the list.
+addDestinationButton.addEventListener('click', addDestination);
 function addDestination(event) {
     event.preventDefault();
     const continent = document.getElementById('continent').value;
